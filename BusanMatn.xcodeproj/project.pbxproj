@@ -12,7 +12,25 @@
 		FD71BA7D21881853002A0267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD71BA7B21881853002A0267 /* Main.storyboard */; };
 		FD71BA7F21881855002A0267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD71BA7E21881855002A0267 /* Assets.xcassets */; };
 		FD71BA8221881855002A0267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD71BA8021881855002A0267 /* LaunchScreen.storyboard */; };
+		FD71BA8B21881995002A0267 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD71BA8A21881995002A0267 /* MapKit.framework */; };
+		FD71BA8C21881E10002A0267 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD71BA8A21881995002A0267 /* MapKit.framework */; };
+		FD71BA8D21881E10002A0267 /* MapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD71BA8A21881995002A0267 /* MapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD71BA9421882546002A0267 /* BusanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD71BA9321882546002A0267 /* BusanData.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD71BA8E21881E10002A0267 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FD71BA8D21881E10002A0267 /* MapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FD71BA7421881853002A0267 /* BusanMatn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusanMatn.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +40,8 @@
 		FD71BA7E21881855002A0267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD71BA8121881855002A0267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD71BA8321881855002A0267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD71BA8A21881995002A0267 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FD71BA9321882546002A0267 /* BusanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusanData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD71BA8C21881E10002A0267 /* MapKit.framework in Frameworks */,
+				FD71BA8B21881995002A0267 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +62,7 @@
 			children = (
 				FD71BA7621881853002A0267 /* BusanMatn */,
 				FD71BA7521881853002A0267 /* Products */,
+				FD71BA8921881995002A0267 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +83,17 @@
 				FD71BA7E21881855002A0267 /* Assets.xcassets */,
 				FD71BA8021881855002A0267 /* LaunchScreen.storyboard */,
 				FD71BA8321881855002A0267 /* Info.plist */,
+				FD71BA9321882546002A0267 /* BusanData.swift */,
 			);
 			path = BusanMatn;
+			sourceTree = "<group>";
+		};
+		FD71BA8921881995002A0267 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD71BA8A21881995002A0267 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +106,7 @@
 				FD71BA7021881853002A0267 /* Sources */,
 				FD71BA7121881853002A0267 /* Frameworks */,
 				FD71BA7221881853002A0267 /* Resources */,
+				FD71BA8E21881E10002A0267 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD71BA9421882546002A0267 /* BusanData.swift in Sources */,
 				FD71BA7A21881853002A0267 /* ViewController.swift in Sources */,
 				FD71BA7821881853002A0267 /* AppDelegate.swift in Sources */,
 			);
